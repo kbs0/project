@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathologies des Planchers - Bois, Béton, Acier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: #1a1a2e;
+            min-height: 100vh;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #c51162;
+        }
+
+        .page-title {
+            margin-top: 80px;
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .page-title h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .page-title p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .content {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            padding-bottom: 40px;
+        }
+
+        .material-section {
+            margin-bottom: 40px;
+        }
+        .material-section > h2 {
+            font-size: 2em;
+            padding: 15px 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .material-section.bois > h2 {
+            background: #5d4037;
+        }
+        .material-section.beton > h2 {
+            background: #455a64;
+        }
+        .material-section.acier > h2 {
+            background: #37474f;
+        }
+
+        .pathology-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            margin: 0;
+            border-left: 4px solid #888;
+            transition: background 0.3s;
+        }
+        .pathology-card:hover {
+            background: rgba(255, 255, 255, 0.14);
+        }
+        .bois .pathology-card {
+            border-left-color: #8d6e63;
+        }
+        .beton .pathology-card {
+            border-left-color: #78909c;
+        }
+        .acier .pathology-card {
+            border-left-color: #90a4ae;
+        }
+
+        .pathology-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .pathology-card .description {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        .pathology-card .detail-label {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        .pathology-card ul {
+            margin: 5px 0 10px 20px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .separator {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: gray;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            background: #c51162;
+        }
+
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 1.8em;
+            }
+            header nav a {
+                font-size: 0.9em;
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#bois">Planchers Bois</a>
+            <a href="#beton">Planchers Béton</a>
+            <a href="#acier">Planchers Acier</a>
+        </nav>
+    </header>
+
+    <div class="page-title">
+        <h1>Pathologies des Planchers</h1>
+        <p>Recueil complet des pathologies affectant les planchers en bois, béton et acier</p>
+    </div>
+
+    <div class="content">
+
+        <!-- ============================================== -->
+        <!--         PLANCHERS BOIS                         -->
+        <!-- ============================================== -->
+        <div class="material-section bois" id="bois">
+            <h2>Planchers Bois</h2>
+
+            <div class="pathology-card">
+                <h3>1. Pourriture cubique (pourriture brune)</h3>
+                <p class="description">Dégradation du bois causée par des champignons lignivores (notamment le mérule) qui décomposent la cellulose. Le bois prend un aspect cubique, brun et friable.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Humidité persistante supérieure à 20%</li>
+                    <li>Défaut de ventilation sous le plancher</li>
+                    <li>Remontées capillaires, infiltrations d'eau</li>
+                    <li>Contact direct bois/maçonnerie humide</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Perte totale de résistance mécanique</li>
+                    <li>Effondrement possible du plancher</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Traiter la source d'humidité</li>
+                    <li>Remplacer les éléments atteints</li>
+                    <li>Traitement fongicide curatif</li>
+                    <li>Améliorer la ventilation</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>2. Pourriture fibreuse (pourriture blanche)</h3>
+                <p class="description">Champignons qui décomposent la lignine du bois, lui donnant un aspect blanchâtre et fibreux. Le bois devient mou et spongieux.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Humidité importante et prolongée</li>
+                    <li>Bois exposé aux intempéries ou à la condensation</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Affaiblissement progressif des solives et poutres</li>
+                    <li>Déformation du plancher</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Remplacement des parties dégradées</li>
+                    <li>Traitement fongicide et assèchement</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>3. Attaque par le mérule (Serpula lacrymans)</h3>
+                <p class="description">Le mérule est le champignon le plus destructeur pour le bois en intérieur. Il se développe dans les zones sombres, humides et mal ventilées. Il peut traverser la maçonnerie.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Humidité supérieure à 22% dans le bois</li>
+                    <li>Absence de ventilation</li>
+                    <li>Fuites d'eau non détectées</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Destruction rapide et totale du bois</li>
+                    <li>Propagation à l'ensemble de la structure</li>
+                    <li>Risque d'effondrement</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Diagnostic obligatoire par un expert</li>
+                    <li>Traitement curatif lourd (injection, bûchage)</li>
+                    <li>Suppression de la source d'humidité</li>
+                    <li>Remplacement des bois contaminés</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>4. Attaques d'insectes xylophages</h3>
+                <p class="description">Les insectes à larves xylophages (capricornes, vrillettes, lyctus, termites) creusent des galeries dans le bois, réduisant sa section utile.</p>
+                <p><span class="detail-label">Types d'insectes :</span></p>
+                <ul>
+                    <li><strong>Capricorne des maisons :</strong> attaque les résineux (solives, poutres)</li>
+                    <li><strong>Petite vrillette :</strong> attaque les bois anciens et humides</li>
+                    <li><strong>Grosse vrillette :</strong> bois déjà affaibli par des champignons</li>
+                    <li><strong>Lyctus :</strong> attaque les bois feuillus riches en amidon</li>
+                    <li><strong>Termites :</strong> détruisent le bois de l'intérieur sans signe extérieur visible</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Réduction de la section portante</li>
+                    <li>Fragilisation et risque de rupture</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Traitement insecticide par injection ou pulvérisation</li>
+                    <li>Remplacement des pièces trop dégradées</li>
+                    <li>Traitement préventif des bois neufs</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>5. Flèche excessive (déformation par flexion)</h3>
+                <p class="description">Déformation verticale anormale des solives ou poutres sous l'effet des charges permanentes et d'exploitation. Le plancher s'affaisse visiblement.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Sous-dimensionnement des solives</li>
+                    <li>Portée trop importante sans appui intermédiaire</li>
+                    <li>Surcharge d'exploitation non prévue</li>
+                    <li>Fluage naturel du bois sous charge permanente</li>
+                    <li>Affaiblissement par attaque biologique</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Plancher qui vibre, craque, s'affaisse</li>
+                    <li>Fissuration des cloisons et revêtements</li>
+                    <li>Inconfort et risque structurel</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Renforcement par ajout de solives ou poutres</li>
+                    <li>Pose d'étais ou de poteaux intermédiaires</li>
+                    <li>Doublage par des éléments métalliques</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>6. Vibrations excessives</h3>
+                <p class="description">Les planchers bois sont sensibles aux vibrations dues au passage des occupants, créant un inconfort acoustique et un sentiment d'insécurité.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Rigidité insuffisante du plancher</li>
+                    <li>Fréquence propre trop basse (inférieure à 8 Hz)</li>
+                    <li>Absence d'entretoises entre solives</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Ajout d'entretoises ou de contreventement</li>
+                    <li>Augmentation de la masse du plancher (chape sèche)</li>
+                    <li>Renforcement de la rigidité</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>7. Retrait et fissuration du bois</h3>
+                <p class="description">Le bois se rétracte en séchant, provoquant des fentes longitudinales (gerces) et des jeux entre les lames de plancher.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Bois mis en oeuvre avec un taux d'humidité trop élevé</li>
+                    <li>Chauffage excessif qui assèche le bois</li>
+                    <li>Variations hygrométriques importantes</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Jeux entre lames, grincements</li>
+                    <li>Fentes dans les solives (réduction de section)</li>
+                    <li>Ponts thermiques et acoustiques</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Utiliser du bois sec (humidité &lt; 18%)</li>
+                    <li>Maintenir une hygrométrie stable</li>
+                    <li>Rejointoyer les lames de plancher</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>8. Défaut d'appui et ancrage</h3>
+                <p class="description">Dégradation des zones d'appui des solives dans les murs porteurs, par pourrissement du bois au contact de la maçonnerie humide.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Absence de coupure de capillarité</li>
+                    <li>Encastrement du bois dans un mur humide</li>
+                    <li>Défaut d'étanchéité</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Pourrissement des abouts de solives</li>
+                    <li>Perte d'appui et risque d'effondrement localisé</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Réparation par prothèse (résine + armature)</li>
+                    <li>Remplacement des abouts dégradés</li>
+                    <li>Pose de sabots métalliques</li>
+                    <li>Interposition d'un feutre bitumé</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>9. Défaut de contreventement</h3>
+                <p class="description">Absence ou insuffisance du contreventement horizontal, rendant le plancher instable latéralement.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Absence de panneaux de contreventement (OSB, contreplaqué)</li>
+                    <li>Clouage ou vissage insuffisant</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Déversement des solives</li>
+                    <li>Instabilité globale de la structure</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Pose de panneaux structuraux cloués</li>
+                    <li>Ajout d'entretoises en croix de Saint-André</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>10. Dégradation par le feu</h3>
+                <p class="description">Le bois est combustible. En cas d'incendie, la section résiduelle diminue à mesure que le bois se consume (vitesse de carbonisation : environ 0,7 mm/min).</p>
+                <p><span class="detail-label">Prévention :</span></p>
+                <ul>
+                    <li>Surdimensionnement des sections pour tenir compte de la durée de résistance au feu</li>
+                    <li>Traitement ignifuge</li>
+                    <li>Protection par plaques de plâtre (coupe-feu)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!--         PLANCHERS BÉTON                        -->
+        <!-- ============================================== -->
+        <div class="material-section beton" id="beton">
+            <h2>Planchers Béton</h2>
+
+            <div class="pathology-card">
+                <h3>1. Fissuration par retrait de dessiccation</h3>
+                <p class="description">Fissures superficielles ou traversantes dues à l'évaporation de l'eau excédentaire du béton lors du durcissement. C'est la pathologie la plus fréquente des dalles béton.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Dosage en eau excessif (rapport E/C trop élevé)</li>
+                    <li>Cure insuffisante après coulage</li>
+                    <li>Conditions de séchage trop rapides (vent, chaleur)</li>
+                    <li>Absence ou insuffisance de joints de retrait</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Fissures de faïençage en surface</li>
+                    <li>Fissures traversantes permettant les infiltrations</li>
+                    <li>Risque de corrosion des armatures</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Injection de résine époxy pour fissures structurelles</li>
+                    <li>Pontage souple pour fissures non structurelles</li>
+                    <li>Application d'un revêtement d'imperméabilisation</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>2. Fissuration par retrait plastique</h3>
+                <p class="description">Fissures qui apparaissent dans les premières heures après le coulage, avant la prise du béton, dues à une évaporation de surface trop rapide.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Température ambiante élevée</li>
+                    <li>Vent sec en surface</li>
+                    <li>Absence de cure de protection</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Protection immédiate après coulage (bâche, produit de cure)</li>
+                    <li>Humidification régulière de la surface</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>3. Corrosion des armatures</h3>
+                <p class="description">Oxydation des aciers d'armature lorsque le béton d'enrobage perd son alcalinité protectrice (carbonatation) ou en présence de chlorures. Le gonflement de la rouille fait éclater le béton.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Enrobage insuffisant des armatures</li>
+                    <li>Carbonatation du béton (front de CO2)</li>
+                    <li>Présence de chlorures (sels de déverglaçage, environnement marin)</li>
+                    <li>Fissures permettant la pénétration d'agents agressifs</li>
+                    <li>Béton poreux ou mal vibré</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Éclatement du béton d'enrobage (épaufrures)</li>
+                    <li>Réduction de la section d'acier</li>
+                    <li>Perte de capacité portante</li>
+                    <li>Taches de rouille en sous-face</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Dégagement et sablage des armatures corrodées</li>
+                    <li>Application d'un passivant anti-corrosion</li>
+                    <li>Reconstitution de l'enrobage par mortier de réparation</li>
+                    <li>Protection cathodique pour les cas sévères</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>4. Carbonatation du béton</h3>
+                <p class="description">Pénétration progressive du CO2 atmosphérique dans le béton, neutralisant l'alcalinité protectrice (pH passe de ~13 à ~9). Quand le front de carbonatation atteint les armatures, la corrosion peut débuter.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Béton poreux, mal compacté</li>
+                    <li>Enrobage faible</li>
+                    <li>Environnement urbain ou industriel (CO2 élevé)</li>
+                </ul>
+                <p><span class="detail-label">Diagnostic :</span></p>
+                <ul>
+                    <li>Test à la phénolphtaléine (zone incolore = carbonatée)</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Application d'un revêtement anti-carbonatation</li>
+                    <li>Ré-alcalinisation électrochimique</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>5. Réaction alcali-granulat (RAG / alcali-réaction)</h3>
+                <p class="description">Réaction chimique interne entre les alcalins du ciment et certains granulats siliceux réactifs, produisant un gel expansif qui fissure le béton de l'intérieur.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Granulats contenant de la silice réactive</li>
+                    <li>Teneur élevée en alcalins dans le ciment</li>
+                    <li>Présence d'eau</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Fissuration en carte (faïençage profond)</li>
+                    <li>Gonflement du béton</li>
+                    <li>Exsudation de gel blanchâtre</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Pas de traitement curatif efficace une fois la réaction engagée</li>
+                    <li>Limitation de l'apport en eau (imperméabilisation)</li>
+                    <li>Confinement et surveillance structurelle</li>
+                    <li>Prévention : choix de granulats non réactifs, ciment à faible teneur en alcalins</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>6. Flèche excessive des dalles et poutres</h3>
+                <p class="description">Déformation verticale dépassant les limites admissibles (L/250 ou L/500 selon l'Eurocode 2), provoquant des désordres sur les éléments non structuraux.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Sous-dimensionnement (erreur de calcul)</li>
+                    <li>Fluage du béton sous charges permanentes</li>
+                    <li>Retrait non pris en compte</li>
+                    <li>Mise en charge prématurée</li>
+                    <li>Surcharges non prévues</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Fissuration des cloisons et carrelages</li>
+                    <li>Stagnation d'eau en toiture-terrasse</li>
+                    <li>Désordres esthétiques et fonctionnels</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Renforcement par collage de plats ou tissus en fibre de carbone (CFRP)</li>
+                    <li>Ajout de poutrelles métalliques en sous-face</li>
+                    <li>Ajout de poteaux intermédiaires</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>7. Poinçonnement</h3>
+                <p class="description">Rupture par cisaillement localisé autour d'un poteau ou d'une charge concentrée qui transperce la dalle. C'est une rupture brutale et dangereuse.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Épaisseur de dalle insuffisante</li>
+                    <li>Armatures de poinçonnement absentes ou insuffisantes</li>
+                    <li>Charges concentrées non prévues</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Rupture brutale sans signe avant-coureur</li>
+                    <li>Effondrement progressif (ruine en chaîne)</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Renforcement par chapiteaux en béton</li>
+                    <li>Ajout d'armatures de poinçonnement (goujons)</li>
+                    <li>Collage de renforts CFRP</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>8. Défauts de bétonnage (nids de cailloux, ségrégation)</h3>
+                <p class="description">Zones de béton mal compacté présentant des vides, des nids de graviers ou une ségrégation des constituants, réduisant la résistance et la durabilité.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Vibration insuffisante ou absente</li>
+                    <li>Béton trop sec ou mal formulé</li>
+                    <li>Hauteur de chute excessive</li>
+                    <li>Coffrage non étanche (fuite de laitance)</li>
+                    <li>Ferraillage trop dense empêchant le passage du béton</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Zones poreuses non protectrices</li>
+                    <li>Réduction de la résistance locale</li>
+                    <li>Corrosion accélérée des armatures</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Purge et ragréage au mortier de réparation</li>
+                    <li>Injection de coulis ou résine</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>9. Infiltrations et problèmes d'étanchéité</h3>
+                <p class="description">Passage d'eau à travers le plancher béton, particulièrement fréquent dans les dalles sur terre-plein, les sous-sols et les planchers terrasse.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Fissures traversantes</li>
+                    <li>Joints de dilatation défectueux</li>
+                    <li>Reprises de bétonnage mal traitées</li>
+                    <li>Absence de membrane d'étanchéité</li>
+                    <li>Passages de réseaux non étanchés</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Injection de résine polyuréthane ou époxy</li>
+                    <li>Application de revêtement d'imperméabilisation</li>
+                    <li>Réfection des joints de dilatation</li>
+                    <li>Cuvelage pour les sous-sols</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>10. Attaque par les sulfates</h3>
+                <p class="description">Réaction chimique entre les sulfates (provenant du sol, de l'eau ou de matériaux) et les aluminates du ciment, provoquant un gonflement destructeur (ettringite secondaire).</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Sol ou nappe phréatique riche en sulfates</li>
+                    <li>Utilisation de ciment non résistant aux sulfates (non PM/ES)</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Gonflement et fissuration du béton</li>
+                    <li>Désagrégation progressive</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Prévention : ciment PM ou ES en milieu sulfaté</li>
+                    <li>Protection par revêtement imperméable</li>
+                    <li>Remplacement des parties dégradées</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>11. Réaction sulfatique interne (RSI / DEF)</h3>
+                <p class="description">Formation différée d'ettringite dans le béton ayant subi un échauffement excessif lors de la prise (température &gt; 65-70°C), provoquant un gonflement interne tardif.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Échauffement excessif du béton (pièces massives, étuvage)</li>
+                    <li>Ciment à forte teneur en C3A et sulfates</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Fissuration généralisée après plusieurs années</li>
+                    <li>Gonflement et perte de résistance</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Pas de traitement curatif réel</li>
+                    <li>Surveillance et confinement</li>
+                    <li>Prévention : contrôle de la température de prise</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>12. Effondrement de planchers poutrelles-hourdis</h3>
+                <p class="description">Pathologie spécifique aux planchers préfabriqués avec poutrelles et entrevous. Défauts de mise en oeuvre pouvant mener à l'effondrement.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Étaiement insuffisant ou retiré prématurément</li>
+                    <li>Table de compression trop mince ou non armée</li>
+                    <li>Poutrelles mal positionnées</li>
+                    <li>Hourdis de mauvaise qualité (polystyrène écrasé)</li>
+                    <li>Absence de chaînage en rive</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Respect strict des règles de mise en oeuvre (DTU 23.2 / 23.4)</li>
+                    <li>Renforcement par dalle collaborante</li>
+                    <li>Remplacement si nécessaire</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!--         PLANCHERS ACIER                        -->
+        <!-- ============================================== -->
+        <div class="material-section acier" id="acier">
+            <h2>Planchers Acier</h2>
+
+            <div class="pathology-card">
+                <h3>1. Corrosion atmosphérique</h3>
+                <p class="description">Oxydation de l'acier par l'humidité et les agents agressifs de l'environnement. C'est la pathologie principale des structures métalliques.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Protection anticorrosion absente, insuffisante ou dégradée</li>
+                    <li>Humidité persistante (condensation, infiltrations)</li>
+                    <li>Environnement agressif (industriel, marin, urbain)</li>
+                    <li>Zones de rétention d'eau (assemblages, pieds de poteaux)</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Réduction de la section d'acier</li>
+                    <li>Perte de capacité portante</li>
+                    <li>Blocage des assemblages</li>
+                    <li>Perforation des tôles minces</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Sablage et remise en peinture anticorrosion</li>
+                    <li>Galvanisation à chaud pour les éléments neufs</li>
+                    <li>Métallisation (projection de zinc ou aluminium)</li>
+                    <li>Remplacement des profilés trop corrodés</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>2. Corrosion galvanique (bimétallique)</h3>
+                <p class="description">Corrosion accélérée lorsque deux métaux différents sont en contact en présence d'un électrolyte (eau). Le métal le moins noble se corrode préférentiellement.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Contact acier/aluminium, acier/cuivre sans isolation</li>
+                    <li>Boulons en acier inox dans une structure en acier au carbone</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Interposition de joints isolants (néoprène, PTFE)</li>
+                    <li>Utilisation de métaux compatibles</li>
+                    <li>Protection par peinture des zones de contact</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>3. Flambement local des âmes et semelles</h3>
+                <p class="description">Instabilité locale des parois minces des profilés métalliques (voilement de l'âme, flambement de la semelle comprimée) sous l'effet des contraintes de compression ou cisaillement.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Profilés de classe 4 (parois très élancées)</li>
+                    <li>Charges concentrées sans raidisseurs</li>
+                    <li>Sous-dimensionnement</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Déformation locale irréversible</li>
+                    <li>Rupture possible par instabilité</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Ajout de raidisseurs d'âme</li>
+                    <li>Renforcement par soudure de plats</li>
+                    <li>Remplacement du profilé</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>4. Déversement des poutres</h3>
+                <p class="description">Instabilité latérale des poutres métalliques fléchies : la semelle comprimée se dérobe latéralement avec rotation de la section, menant à la ruine.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Longueur de déversement trop grande (portée libre sans maintien latéral)</li>
+                    <li>Section trop élancée</li>
+                    <li>Absence de contreventement latéral (liernes, diaphragmes)</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Ajout de butons ou liernes de maintien latéral</li>
+                    <li>Connexion au bac acier (maintien continu de la semelle supérieure)</li>
+                    <li>Remplacement par un profilé plus large</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>5. Fatigue des assemblages</h3>
+                <p class="description">Fissuration progressive des assemblages (soudures, boulons) sous l'effet de sollicitations cycliques répétées, même si les contraintes restent inférieures à la limite élastique.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Vibrations dues aux machines, au trafic</li>
+                    <li>Variations thermiques cycliques</li>
+                    <li>Détails constructifs créant des concentrations de contraintes</li>
+                    <li>Défauts de soudure (caniveaux, manque de pénétration)</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Amorce de fissure au pied des soudures</li>
+                    <li>Propagation et rupture fragile sans avertissement</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Meulage des pieds de soudure (réduction du facteur de concentration)</li>
+                    <li>Renforcement par plats boulonnés</li>
+                    <li>Remplacement des assemblages fissurés</li>
+                    <li>Contrôle par CND (ultrasons, magnétoscopie)</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>6. Rupture fragile</h3>
+                <p class="description">Rupture brutale de l'acier sans déformation plastique préalable, particulièrement à basse température ou en présence de défauts.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Température inférieure à la température de transition ductile-fragile</li>
+                    <li>Acier de mauvaise qualité (faible résilience)</li>
+                    <li>Concentrations de contraintes (entailles, soudures défectueuses)</li>
+                    <li>Épaisseurs importantes (effet d'épaisseur)</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Choix de nuances d'acier adaptées (sous-qualité JR, J0, J2, K2)</li>
+                    <li>Détails constructifs évitant les concentrations de contraintes</li>
+                    <li>Contrôle qualité des soudures</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>7. Flèche excessive et vibrations</h3>
+                <p class="description">Les planchers mixtes acier-béton ou les planchers sur bac acier collaborant peuvent présenter des flèches et vibrations excessives en raison de la légèreté de la structure.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Portées trop grandes sans poutres secondaires</li>
+                    <li>Épaisseur de dalle insuffisante</li>
+                    <li>Fréquence propre inférieure à 3-4 Hz (planchers de bureaux)</li>
+                    <li>Surcharges non prévues</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Ajout de poutres secondaires</li>
+                    <li>Augmentation de la masse (épaisseur de dalle)</li>
+                    <li>Installation d'amortisseurs de masse accordés (TMD)</li>
+                    <li>Renforcement par plats soudés ou boulonnés</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>8. Défaillance des connecteurs de cisaillement (goujons Nelson)</h3>
+                <p class="description">Dans les planchers mixtes acier-béton, les connecteurs assurent la liaison entre la poutre acier et la dalle béton. Leur défaillance rompt l'action composite.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Nombre insuffisant de connecteurs</li>
+                    <li>Défauts de soudure des goujons</li>
+                    <li>Fatigue sous charges cycliques</li>
+                    <li>Retrait différentiel béton/acier</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Glissement à l'interface acier-béton</li>
+                    <li>Perte de l'effet composite (flèche augmentée)</li>
+                    <li>Fissuration de la dalle en béton</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Ajout de connecteurs post-installés (boulons traversants)</li>
+                    <li>Renforcement de la poutre acier pour fonctionnement non-composite</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>9. Déformation des bacs acier collaborants</h3>
+                <p class="description">Les bacs acier servant de coffrage et d'armature pour les dalles collaborantes peuvent se déformer ou flamber pendant la phase de bétonnage.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Étaiement insuffisant pendant le coulage</li>
+                    <li>Épaisseur de bac trop faible pour la portée</li>
+                    <li>Surcharge de béton frais (accumulation)</li>
+                    <li>Poinçonnement par les étais</li>
+                </ul>
+                <p><span class="detail-label">Conséquences :</span></p>
+                <ul>
+                    <li>Flèche permanente du bac</li>
+                    <li>Surépaisseur de béton (surcharge permanente)</li>
+                    <li>Perte de planéité du plancher</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Respect des portées maximales des bacs (fiche technique fabricant)</li>
+                    <li>Étaiement adapté pendant le coulage</li>
+                    <li>Rattrapage de niveau par ragréage</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>10. Défaut de protection au feu</h3>
+                <p class="description">L'acier perd rapidement sa résistance mécanique à haute température (50% de perte à ~550°C). Sans protection, un plancher acier peut s'effondrer en 15-20 minutes d'incendie.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Absence de protection au feu</li>
+                    <li>Protection endommagée ou insuffisante</li>
+                    <li>Écran coupe-feu non maintenu</li>
+                </ul>
+                <p><span class="detail-label">Types de protection :</span></p>
+                <ul>
+                    <li>Flocage (projection de laine minérale ou plâtre fibreux)</li>
+                    <li>Peinture intumescente</li>
+                    <li>Encoffrement par plaques de plâtre ou béton</li>
+                    <li>Écrans suspendus (plafonds coupe-feu)</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>11. Corrosion sous calorifuge</h3>
+                <p class="description">Corrosion cachée sous les matériaux d'isolation thermique ou de protection feu, particulièrement insidieuse car invisible sans démontage.</p>
+                <p><span class="detail-label">Causes :</span></p>
+                <ul>
+                    <li>Infiltration d'eau sous le calorifuge</li>
+                    <li>Condensation piégée</li>
+                    <li>Calorifuge non étanche à l'eau</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Inspections périodiques avec dépose partielle</li>
+                    <li>Utilisation de calorifuges hydrophobes</li>
+                    <li>Contrôle par thermographie infrarouge</li>
+                </ul>
+            </div>
+
+            <hr class="separator">
+
+            <div class="pathology-card">
+                <h3>12. Défauts de soudure</h3>
+                <p class="description">Les soudures sont des points critiques des structures acier. Les défauts de soudure peuvent entraîner des ruptures sous sollicitations.</p>
+                <p><span class="detail-label">Types de défauts :</span></p>
+                <ul>
+                    <li><strong>Caniveaux :</strong> entaille le long du cordon (concentration de contrainte)</li>
+                    <li><strong>Manque de pénétration :</strong> fusion incomplète à la racine</li>
+                    <li><strong>Soufflures :</strong> bulles de gaz piégées dans le cordon</li>
+                    <li><strong>Fissures à chaud / à froid :</strong> pendant ou après le refroidissement</li>
+                    <li><strong>Inclusions de laitier :</strong> résidus piégés dans la soudure</li>
+                </ul>
+                <p><span class="detail-label">Remèdes :</span></p>
+                <ul>
+                    <li>Contrôle qualité systématique (visuel, ultrasons, radiographie)</li>
+                    <li>Meulage et reprise des soudures défectueuses</li>
+                    <li>Qualification des soudeurs et des modes opératoires (QMOS)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="back-link">Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>
